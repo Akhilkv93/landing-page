@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Noto Sans", sans-serif;
+}
+.container{
+    
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+  
+    padding: 10px;
+    align-items: center;
+    height: 10vh;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+}
+a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+button{
+    border: none;
+    background-color: white;
+}
+.buttons button{
+margin: 10px;
+}
+.box{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(201, 174, 179, 0.61);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+padding: 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 90vh;
+
+
+}
+.content{
+    position: relative;
+    left: 20px;
+    width: 350px;
+}
+.detail{
+    max-width: 400px;
+    position: relative;  
+    }
+    
+.img1{
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    left: -180px;
+    top: 80px;
+    border: solid rgba(255, 255, 255, 0.466);
+}
+
+.img2{
+    border: solid rgba(255, 255, 255, 0.466);
+    width: 120px;
+    border-radius: 10px;   
+    z-index: 2;
+    position: absolute; 
+    left :px;
+    bottom: -30px;
+}
+.quote{
+    width: 300px;
+}
+.quote h2{
+font-size: 40px;
+}
+.quote button{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+
+@media(max-width:500px){
+    ul{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+        height: 150vh;
+        justify-content: center;
+        align-items: center;
+       
+        
+
+    }
+    .quote{
+        text-align: center;
+        max-width: 300px;
+        width: 70%;
+        margin: auto;
+    }
+    .detail{
+        width: 80%;
+    }
+.img1{
+    top: -15px;
+    left: 0;
+    width: 20%;
+}
+.img2{
+    bottom: -15px;
+    right: 0;
+    width: 20%;
+}
+}
+@media(max-width:950px) {
+    .main{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .img1{
+       width: 20%;
+       left: 0;
+       top: 0;
+    }
+    .img2{
+        right: 0;
+        width: 20%;
+        bottom: 0;
+    }
+}
